@@ -9,10 +9,15 @@ Para desenvolver a aplicação:
 1. Crie uma classe de exceção, chamada NumeroClienteInvalidoException, para permitir à aplicação lidar com números de cliente inválidos passados por parâmetro. Objectos desta classe devem permitir à aplicação o número inválido que originou a exceção.
 
 2. Crie classes adequadas para construir objectos representativos de clientes e serviços, que satisfaçam os seguintes requisitos:
-->Cada classe tem de possuir um construtor completo (com uma lista de parâmetros completa para inicializar todos os campos de dados).
-->Apenas deve ser validado o parâmetro que recebe o número de cliente. Este número deve ser um número inteiro positivo, caso contrário, deve originar uma exceção do tipo criado no ponto 1.
-->Os custos dos serviços devem poder ser modificados pelo utilizador da aplicação.
-->Cada objecto representativo de um cliente deve:
+
+	->Cada classe tem de possuir um construtor completo (com uma lista de parâmetros completa para inicializar todos os campos de dados).
+
+	->Apenas deve ser validado o parâmetro que recebe o número de cliente. Este número deve ser um número inteiro positivo, caso contrário, deve originar uma exceção do tipo criado no ponto 1.
+
+	->Os custos dos serviços devem poder ser modificados pelo utilizador da aplicação.
+
+	->Cada objecto representativo de um cliente deve:
+
 	. Guardar um ou mais serviços contratados;
 	. Permitir adicionar novos serviços contratados, em qualquer momento;
 	. Permitir calcular a mensalidade do cliente (soma dos custos dos serviços contratados);
