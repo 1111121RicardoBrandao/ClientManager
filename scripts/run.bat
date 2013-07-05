@@ -1,2 +1,2 @@
-@java -cp ..\dist\ClientManager.jar clientmanager.ClientManager
+@java -cp ..\dist\ClientManager.jar; clientmanager.ClientManager
 @pause

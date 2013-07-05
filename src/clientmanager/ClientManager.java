@@ -19,7 +19,7 @@ public class ClientManager {
     public static void main(String[] args) throws InvalidClientNumberException{
         // TODO code application logic here
         
-        ArrayList<Client> allClients = new ArrayList();
+        ArrayList<Client> allClients = new ArrayList<>();
         
         PhoneService.setMonthlyCostPhoneService(10);
         InternetService.setMonthlyCostM20(20);
