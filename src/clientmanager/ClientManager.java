@@ -5,6 +5,8 @@
 package clientmanager;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 /**
  *
@@ -18,7 +20,7 @@ public class ClientManager {
     public static void main(String[] args) throws InvalidClientNumberException{
         // TODO code application logic here
         
-        ArrayList<Client> allClients = new ArrayList<>();
+        ArrayList<Client> allClients = new ArrayList();
         
         PhoneService.setMonthlyCostPhoneService(10);
         InternetService.setMonthlyCostM20(20);
@@ -38,6 +40,12 @@ public class ClientManager {
         
         allClients.add(c1);
         allClients.add(c2);
+        allClients.add(c1);
+        allClients.add(c2);
+        
+        SortArrayList NAME = new SortArrayList();
+        
+        Collections.sort(allClients, NAME); 
         
         System.out.println("Profits: ");
         for(Client c:allClients)
