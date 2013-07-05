@@ -10,12 +10,18 @@ import java.util.ArrayList;
  *
  * @author Scare
  */
-public class Client {
+public class Client{
     
     private ArrayList<Service> clientServices;
     private String name;
     private int clientNumber;
     
+    /**
+     *
+     * @param name
+     * @param clientNumber
+     * @throws InvalidClientNumberException
+     */
     public Client(String name, int clientNumber) throws InvalidClientNumberException{
         this.setName(name);
         this.setClientServices(new ArrayList<Service>());
@@ -86,5 +92,4 @@ public class Client {
         return paymentValue;
     }
 
-    
 }

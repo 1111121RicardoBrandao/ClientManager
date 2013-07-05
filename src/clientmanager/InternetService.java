@@ -104,10 +104,14 @@ public class InternetService extends Service{
         this.idAccount = idAccount;
     }
 
+    /**
+     *
+     * @return total cost of this internet service
+     */
     @Override
     public float calculateServicePayment() {
         float totalCost;
-        //In future phone service can have more taxes or something like that
+        //In future internet service can have more taxes or something like that
         totalCost = this.getMonthlyCost();
         return totalCost;
     }

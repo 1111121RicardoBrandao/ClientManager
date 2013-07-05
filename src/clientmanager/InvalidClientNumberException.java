@@ -9,14 +9,20 @@ package clientmanager;
  * @author Scare
  */
 public class InvalidClientNumberException extends Exception{
-	public InvalidClientNumberException()
-	{
-		super("ATENTION. Invalid client number!");
-	}
+    
+    /**
+     * @exception InvalidClientNumberException
+     */
+    public InvalidClientNumberException(){
+        super("ATENTION. Invalid client number!");
+    }
 
-	public InvalidClientNumberException(int s)
-	{
-		super("ATENTION. Invalid client number on " + s + " number.");
-	}
+    /**
+     * @exception InvalidClientNumberException
+     * @param s
+     */
+    public InvalidClientNumberException(int s){
+        super("ATENTION. Invalid client number on " + s + " number.");
+    }
 }
 
