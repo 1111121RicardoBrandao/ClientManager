@@ -69,6 +69,13 @@ public class Client {
     }
     
     /**
+     * @param clientServices the clientServices to set
+     */
+    public final void addClientService(Service s) {
+        this.clientServices.add(s);
+    }
+    
+    /**
      * @return the value of Monthly payment. Sum of all cost services of this client
      */
     public float calculateMonthlyPayment(){
