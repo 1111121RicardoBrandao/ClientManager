@@ -33,10 +33,12 @@ public class InternetService extends Service{
         if(speed.equals(internetOptions.M20)){
             this.setMonthlyCost(monthlyCostM20);
             this.idAccount = id;
+            internetSpeed=speed;
         }
         else if(speed.equals(internetOptions.M100)){
             this.setMonthlyCost(monthlyCostM100);
             this.idAccount = id;
+            internetSpeed=speed;
         }      
     }
     
