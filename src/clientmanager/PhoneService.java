@@ -12,13 +12,13 @@ public class PhoneService extends Service{
 
     private String idOperator;
     private int phoneNumber;
-    private static float monthlyCost;
+    private static float Cost;
     
     /**
      * @Instantiate objects PhoneService
      */
     public PhoneService(String id, int number){
-        super(monthlyCost);
+        super(Cost);
         this.idOperator = id;
         this.phoneNumber = number;        
     }
@@ -54,15 +54,15 @@ public class PhoneService extends Service{
     /**
      * @return the monthlyCost
      */
-    public static float getMonthlyCostPhoneService() {
-        return monthlyCost;
+    public float getMonthlyCostPhoneService() {
+        return Cost;
     }
 
     /**
      * @param aMonthlyCost the monthlyCost to set
      */
     public static void setMonthlyCostPhoneService(float aMonthlyCost) {
-        monthlyCost = aMonthlyCost;
+        Cost = aMonthlyCost;
     }
 
     /**
@@ -72,7 +72,7 @@ public class PhoneService extends Service{
     public float calculateServicePayment() {
         float totalCost;
         //In future phone service can have more taxes or something like that
-        totalCost = this.getMonthlyCost();
+        totalCost = this.getMonthlyCostPhoneService();
         return totalCost;
     }
     

@@ -39,8 +39,6 @@ public class ClientManager {
         
         allClients.add(c1);
         allClients.add(c2);
-        allClients.add(c1);
-        allClients.add(c2);
         
         SortArrayList NAME = new SortArrayList();
         
